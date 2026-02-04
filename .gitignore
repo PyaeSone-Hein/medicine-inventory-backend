@@ -1,13 +1,53 @@
+# --------------------
 # Python
+# --------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Virtual env
+# --------------------
+# Virtual Environment
+# --------------------
 venv/
-
-# Django
-db.sqlite3
 .env
+.env.*
 
-# IDE
+# --------------------
+# Django
+# --------------------
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Migrations (optional – see note below)
+# **DO NOT ignore migrations once you start collaborating**
+# inventory/migrations/*.py
+# !inventory/migrations/__init__.py
+
+# --------------------
+# Media & Static
+# --------------------
+media/
+staticfiles/
+
+# --------------------
+# IDE / Editor
+# --------------------
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# --------------------
+# OS
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Secrets
+# --------------------
+*.pem
+*.key
